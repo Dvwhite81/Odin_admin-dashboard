@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    color: white;
+    grid-column: 1 / 2;
+    background-color: #1992d4;
+}
+
+.dashboard,
+.links,
+.settings {
+    display: grid;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.sidebar-item {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-item img {
+    justify-self: end;
+}
+
+.large {
+    display: grid;
+    font-size: 125%;
+    height: 125%;
+    align-content: center;
+}
+
+.main {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-rows: 17.5% 82.5%;
+    background-color: orange;
+}
+
+.main-top {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-template-rows: 45% 55%;
+    background-color: yellow;
+}
+
+.header-top {
+    grid-row: 1 / 2;
+    background-color: green;
+}
+
+.header-bottom {
+    grid-row: 2 / 3;
+    background-color: blue;
+}
+
+.main-bottom {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-template-columns: 70% 30%;
+}
+
+/* Whole bottom background color
+.main-bottom div {
+    background-color: white;
+}
+*/
+
+.section-heading {
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.main-left {
+    display: grid;
+    grid-template-rows: 7.5% 85% 7.5%;
+    background-color: aqua;
+}
+
+.main-right {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-rows: 7.5% 38.75% 7.5% 38.75% 42.5%;
+    background-color: slategray;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-left {
+    grid-column: 1 / 2;
+    background-color: chartreuse;
+}
+
+.projects-right {
+    grid-column: 2 / 3;
+    background-color: darkgoldenrod;
+}
+
+.announcements-container {
+    background-color: darkmagenta;
+}
+
+.trending-container {
+    background-color: sienna;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: x-small;
+    }
+
+    .sidebar-item {
+        padding: 0 1rem;
+    }
+}
