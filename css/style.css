@@ -49,7 +49,7 @@ body {
     display: grid;
     grid-column: 2 / 3;
     grid-template-rows: 17.5% 82.5%;
-    background-color: orange;
+    background-color: #e2e8f0;
 }
 
 .main-top {
@@ -75,12 +75,6 @@ body {
     grid-template-columns: 70% 30%;
 }
 
-/* Whole bottom background color
-.main-bottom div {
-    background-color: white;
-}
-*/
-
 .section-heading {
     font-weight: bold;
     display: grid;
@@ -90,15 +84,14 @@ body {
 
 .main-left {
     display: grid;
-    grid-template-rows: 7.5% 85% 7.5%;
-    background-color: aqua;
+    grid-template-rows: 7.5% 92.5%;
 }
 
 .main-right {
     display: grid;
     grid-column: 2 / 3;
     grid-template-rows: 7.5% 38.75% 7.5% 38.75% 42.5%;
-    background-color: slategray;
+    background-color: #e2e8f0;
 }
 
 .projects-container {
@@ -107,21 +100,52 @@ body {
 }
 
 .projects-left {
+    display: grid;
     grid-column: 1 / 2;
-    background-color: chartreuse;
+    background-color: #e2e8f0;
 }
 
 .projects-right {
+    display: grid;
     grid-column: 2 / 3;
-    background-color: darkgoldenrod;
+    background-color: #e2e8f0;
+}
+
+.projects-left,
+.projects-right {
+    justify-items: center;
+}
+
+.card {
+    align-items: center;
+    background-color: white;
+    border-left: 5px solid #f0b429;
+    border-radius: 10px;
+    display: grid;
+    height: 80%;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: end;
+}
+
+.card .item-icon {
+    height: 4vh;
 }
 
 .announcements-container {
-    background-color: darkmagenta;
+    background-color: #e2e8f0;
 }
 
 .trending-container {
-    background-color: sienna;
+    background-color: #e2e8f0;
 }
 
 @media screen and (max-width: 800px) {
