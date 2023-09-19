@@ -64,14 +64,17 @@ body {
 }
 
 .item-icon {
+    cursor: pointer;
     height: 4vh;
 }
 
 .small-avatar {
+    cursor: pointer;
     height: 6vh;
 }
 
 .large-avatar {
+    cursor: pointer;
     height: 10vh;
 }
 
