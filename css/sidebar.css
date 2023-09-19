@@ -1,0 +1,25 @@
+.sidebar {
+    color: white;
+    grid-column: 1 / 2;
+    background-color: #1992d4;
+}
+
+.dashboard,
+.links,
+.settings {
+    display: grid;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.sidebar-item {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-item img {
+    justify-self: end;
+}
